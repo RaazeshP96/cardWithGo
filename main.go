@@ -2,8 +2,7 @@ package main
 
 func main() {
 	cards := newDeck()
-	cards.print()
-}
-func newCard() string {
-	return "Ace of spread"
+	hand, reamainCards := deal(cards, 5)
+	hand.print()
+	reamainCards.print()
 }
