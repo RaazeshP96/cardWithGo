@@ -12,3 +12,13 @@ func (d deck) print() {
 		fmt.Println(index, card)
 	}
 }
+func newDeck() deck {
+	cards := deck{}
+	cardSuits := []string{"Sphare", "Diamonds", "Hearts", "Cube"}
+	cardValues := []string{"ace", "two", "three"}
+	for i, cardSuit := range cardSuits {
+		for j, cardValue := range cardValues {
+			cards = append(cards, cardSuit+"of"+cardValue)
+		}
+	}
+}
