@@ -6,9 +6,9 @@ import (
 
 func main() {
 	// var card string = "this is card"
-	card := newCard()
-	fmt.Println(card)
+	cards := []string{"Five of diamond", newCard()}
+	fmt.Println(cards)
 }
 func newCard() string {
-	return "New card"
+	return "Ace of spread"
 }
