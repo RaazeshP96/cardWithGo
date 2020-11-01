@@ -63,3 +63,5 @@ func (d deck) shuffle() {
 		d[index], d[newPosition] = d[newPosition], d[index]
 	}
 }
+
+
